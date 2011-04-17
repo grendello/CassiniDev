@@ -16,6 +16,7 @@
 
 using System;
 using System.Globalization;
+using System.IO;
 using System.Security.Permissions;
 using System.Security.Principal;
 using System.Threading;
@@ -163,7 +164,7 @@ namespace CassiniDev
             _lowerCasedVirtualPathWithTrailingSlash =
                 CultureInfo.InvariantCulture.TextInfo.ToLower(_lowerCasedVirtualPathWithTrailingSlash);
             _physicalPath = physicalPath;
-            _physicalClientScriptPath = HttpRuntime.AspClientScriptPhysicalPath + "\\";
+            _physicalClientScriptPath = HttpRuntime.AspClientScriptPhysicalPath + Path.DirectorySeparatorChar;
             _lowerCasedClientScriptPathWithTrailingSlash =
                 CultureInfo.InvariantCulture.TextInfo.ToLower(HttpRuntime.AspClientScriptVirtualPath + "/");
         }

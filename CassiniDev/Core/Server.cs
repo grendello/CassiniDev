@@ -140,9 +140,8 @@ namespace CassiniDev
             _port = port;
             _virtualPath = virtualPath;
             _physicalPath = Path.GetFullPath(physicalPath);
-            _physicalPath = _physicalPath.EndsWith("\\", StringComparison.Ordinal)
-                                ? _physicalPath
-                                : _physicalPath + "\\";
+	    if (_physicalPath [_physicalPath.Length - 1] != Path.DirectorySeparatorChar)
+		    _physicalPath = _physicalPath + Path.DirectorySeparatorChar;
             ProcessConfiguration();
 
             _appManager = ApplicationManager.GetApplicationManager();

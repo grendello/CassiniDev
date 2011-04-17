@@ -22,6 +22,14 @@ namespace CassiniDev
 {
     internal static class Interop
     {
+	    public static bool IsMono {
+		    get; private set;
+	    }
+
+	    public static bool IsWindows {
+		    get; private set;
+	    }
+	    
         #region Structs
 
         [DllImport("SECUR32.DLL", CharSet = CharSet.Unicode)]
@@ -68,8 +76,15 @@ namespace CassiniDev
         public static extern int GetStdHandle(int nStdHandle);
 
         [DllImport("ADVAPI32.DLL", SetLastError = true)]
-        public static extern bool ImpersonateSelf(int level);
+        static extern bool ImpersonateSelfInternal(int level);
 
+	    public static bool ImpersonateSelf (int level)
+	    {
+		    if (!IsWindows)
+			    return false;
+		    return ImpersonateSelfInternal (level);
+	    }
+	    
         [DllImport("ADVAPI32.DLL", SetLastError = true)]
         public static extern int OpenThreadToken(IntPtr thread, int access, bool openAsSelf, ref IntPtr hToken);
 
@@ -156,5 +171,12 @@ namespace CassiniDev
         #endregion
 
         #endregion
+
+	    static Interop ()
+	    {
+		    IsMono = Type.GetType ("Mono.Runtime", false) != null;
+		    PlatformID pid = Environment.OSVersion.Platform;
+		    IsWindows = ((int) pid != 128 && pid != PlatformID.Unix && pid != PlatformID.MacOSX);
+	    }
     }
 }

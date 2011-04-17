@@ -389,10 +389,10 @@ namespace CassiniDev
                 }
             }
 
-            mappedPath = mappedPath.Replace('/', '\\');
+            mappedPath = mappedPath.Replace('/', Path.DirectorySeparatorChar);
 
-            if (mappedPath.EndsWith("\\", StringComparison.Ordinal) &&
-                !mappedPath.EndsWith(":\\", StringComparison.Ordinal))
+            if (mappedPath [mappedPath.Length - 1] == Path.DirectorySeparatorChar &&
+                !mappedPath.EndsWith(":" + Path.DirectorySeparatorChar, StringComparison.Ordinal))
             {
                 mappedPath = mappedPath.Substring(0, mappedPath.Length - 1);
             }
@@ -636,7 +636,7 @@ namespace CassiniDev
 
             foreach (String dir in RestrictedDirs)
             {
-                if (p.StartsWith(dir, StringComparison.Ordinal))
+                if (p.StartsWith(dir, StringComparison.OrdinalIgnoreCase))
                 {
                     if (p.Length == dir.Length || p[dir.Length] == '/')
                     {
@@ -910,7 +910,7 @@ namespace CassiniDev
             // check for the default file
             foreach (string filename in DefaultFileNames)
             {
-                string defaultFilePath = dirPathTranslated + "\\" + filename;
+		    string defaultFilePath = Path.Combine (dirPathTranslated, filename);
 
                 if (File.Exists(defaultFilePath))
                 {
