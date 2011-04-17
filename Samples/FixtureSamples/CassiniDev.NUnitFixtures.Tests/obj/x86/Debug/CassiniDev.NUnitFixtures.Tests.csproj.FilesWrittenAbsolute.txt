@@ -1,0 +1,4 @@
+/home/src/vc/cassinidev/Samples/FixtureSamples/CassiniDev.NUnitFixtures.Tests/bin/x86/Debug/CassiniDev.NUnitFixtures.Tests.dll.mdb
+/home/src/vc/cassinidev/Samples/FixtureSamples/CassiniDev.NUnitFixtures.Tests/bin/x86/Debug/CassiniDev.NUnitFixtures.Tests.dll
+/home/src/vc/cassinidev/Samples/FixtureSamples/CassiniDev.NUnitFixtures.Tests/obj/x86/Debug/CassiniDev.NUnitFixtures.Tests.dll
+/home/src/vc/cassinidev/Samples/FixtureSamples/CassiniDev.NUnitFixtures.Tests/obj/x86/Debug/CassiniDev.NUnitFixtures.Tests.dll.mdb

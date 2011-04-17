@@ -1,0 +1,4 @@
+/home/src/vc/cassinidev/CassiniDev/bin/x86/debug/CORSHeaderPlugin.dll.mdb
+/home/src/vc/cassinidev/CassiniDev/bin/x86/debug/CORSHeaderPlugin.dll
+/home/src/vc/cassinidev/CORSHeaderPlugin/obj/x86/Debug/CORSHeaderPlugin.dll
+/home/src/vc/cassinidev/CORSHeaderPlugin/obj/x86/Debug/CORSHeaderPlugin.dll.mdb

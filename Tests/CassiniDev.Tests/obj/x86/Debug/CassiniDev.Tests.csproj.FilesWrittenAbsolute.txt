@@ -1,0 +1,4 @@
+/home/src/vc/cassinidev/Tests/CassiniDev.Tests/bin/x86/Debug/CassiniDev.Tests.dll.mdb
+/home/src/vc/cassinidev/Tests/CassiniDev.Tests/bin/x86/Debug/CassiniDev.Tests.dll
+/home/src/vc/cassinidev/Tests/CassiniDev.Tests/obj/x86/Debug/CassiniDev.Tests.dll
+/home/src/vc/cassinidev/Tests/CassiniDev.Tests/obj/x86/Debug/CassiniDev.Tests.dll.mdb

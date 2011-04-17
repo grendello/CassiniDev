@@ -1,0 +1,6 @@
+/home/src/vc/cassinidev/CassiniDev/obj/x86/Debug/CassiniDev.Resources.CassiniDev.resources
+/home/src/vc/cassinidev/CassiniDev/bin/x86/debug/CassiniDev-lib.dll.config
+/home/src/vc/cassinidev/CassiniDev/bin/x86/debug/CassiniDev-lib.dll.mdb
+/home/src/vc/cassinidev/CassiniDev/bin/x86/debug/CassiniDev-lib.dll
+/home/src/vc/cassinidev/CassiniDev/obj/x86/Debug/CassiniDev-lib.dll
+/home/src/vc/cassinidev/CassiniDev/obj/x86/Debug/CassiniDev-lib.dll.mdb

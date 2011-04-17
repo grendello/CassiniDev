@@ -1,0 +1,4 @@
+/home/src/vc/cassinidev/Samples/FixtureSamples/CassiniDev.TestSite/bin/CassiniDev.TestSite.dll.mdb
+/home/src/vc/cassinidev/Samples/FixtureSamples/CassiniDev.TestSite/bin/CassiniDev.TestSite.dll
+/home/src/vc/cassinidev/Samples/FixtureSamples/CassiniDev.TestSite/obj/x86/Debug/CassiniDev.TestSite.dll
+/home/src/vc/cassinidev/Samples/FixtureSamples/CassiniDev.TestSite/obj/x86/Debug/CassiniDev.TestSite.dll.mdb
